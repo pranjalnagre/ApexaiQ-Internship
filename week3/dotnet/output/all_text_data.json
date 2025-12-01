@@ -1,0 +1,506 @@
+[
+  {
+    "tag": "h1",
+    "text": "Release 8.0.0"
+  },
+  {
+    "tag": "li",
+    "text": "Released on 2023-11-14"
+  },
+  {
+    "tag": "li",
+    "text": "Runtime 8.0.0"
+  },
+  {
+    "tag": "li",
+    "text": "SDK 8.0.100"
+  },
+  {
+    "tag": "li",
+    "text": "ASP.NET Runtime 8.0.0"
+  },
+  {
+    "tag": "li",
+    "text": "Windows Desktop Runtime 8.0.0"
+  },
+  {
+    "tag": "li",
+    "text": "!\nSecurity"
+  },
+  {
+    "tag": "h2",
+    "text": "SDK 8.0.100"
+  },
+  {
+    "tag": "li",
+    "text": "Visual Studio 17.8.0"
+  },
+  {
+    "tag": "li",
+    "text": "C# 12.0"
+  },
+  {
+    "tag": "li",
+    "text": "F# 8.0"
+  },
+  {
+    "tag": "li",
+    "text": "VB 16.9"
+  },
+  {
+    "tag": "h2",
+    "text": "Security"
+  },
+  {
+    "tag": "li",
+    "text": "CVE-2023-36049"
+  },
+  {
+    "tag": "li",
+    "text": "CVE-2023-36558"
+  },
+  {
+    "tag": "li",
+    "text": "CVE-2023-36038"
+  },
+  {
+    "tag": "h2",
+    "text": "Release notes"
+  },
+  {
+    "tag": "h1",
+    "text": ".NET 8.0.0 - November 14, 2023"
+  },
+  {
+    "tag": "p",
+    "text": "The .NET 8.0.0 and .NET SDK 8.0.100 releases are available for download. The latest 8.0 release is always listed at .NET 8.0 Releases."
+  },
+  {
+    "tag": "h2",
+    "text": "What's new in .NET 8"
+  },
+  {
+    "tag": "p",
+    "text": ".NET 8 is the next major release of .NET following .NET 7.0. You can see What's new in .NET 8.0 for more details. You can also find additional details on the following blog posts:"
+  },
+  {
+    "tag": "li",
+    "text": "Announcing .NET 8"
+  },
+  {
+    "tag": "li",
+    "text": "EF Core"
+  },
+  {
+    "tag": "li",
+    "text": "ASP.NET Core"
+  },
+  {
+    "tag": "p",
+    "text": "Here is list of some of the additions and updates we're excited to bring in .NET 8."
+  },
+  {
+    "tag": "li",
+    "text": "EntityFramework Core: bugs | features"
+  },
+  {
+    "tag": "li",
+    "text": ".NET SDK bugs"
+  },
+  {
+    "tag": "h2",
+    "text": "Downloads"
+  },
+  {
+    "tag": "li",
+    "text": "Includes the .NET Runtime and ASP.NET Core Runtime"
+  },
+  {
+    "tag": "li",
+    "text": "For hosting stand-alone apps on Windows Servers. Includes the ASP.NET Core Module for IIS and can be installed separately on servers without installing .NET Runtime."
+  },
+  {
+    "tag": "p",
+    "text": "The .NET SDK includes a matching updated .NET Runtime. Downloading the Runtime or ASP.NET Core packages is not needed when installing the SDK."
+  },
+  {
+    "tag": "p",
+    "text": "You can check your .NET SDK version by running the following command. The example version shown is for this release."
+  },
+  {
+    "tag": "pre",
+    "text": "$ dotnet --version\n8.0.100"
+  },
+  {
+    "tag": "code",
+    "text": "$ dotnet --version\n8.0.100"
+  },
+  {
+    "tag": "h2",
+    "text": "Docker Images"
+  },
+  {
+    "tag": "p",
+    "text": "The .NET Docker images have been updated for this release. The .NET Docker samples show various ways to use .NET and Docker together. You can use the following command to try running the latest .NET 8.0 release in containers:"
+  },
+  {
+    "tag": "pre",
+    "text": "docker run --rm mcr.microsoft.com/dotnet/samples"
+  },
+  {
+    "tag": "code",
+    "text": "docker run --rm mcr.microsoft.com/dotnet/samples"
+  },
+  {
+    "tag": "p",
+    "text": "The following repos have been updated."
+  },
+  {
+    "tag": "li",
+    "text": "dotnet/sdk: .NET SDK"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet/aspnet: ASP.NET Core Runtime"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet/runtime: .NET Runtime"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet/runtime-deps: .NET Runtime Dependencies"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet/monitor: .NET Monitor"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet/monitor/base: .NET Monitor Base"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet/samples: .NET Samples"
+  },
+  {
+    "tag": "h2",
+    "text": "Notable Changes"
+  },
+  {
+    "tag": "p",
+    "text": ".NET 8.0 Blog"
+  },
+  {
+    "tag": "p",
+    "text": ".NET 8.0.0 release carries security and non-security fixes."
+  },
+  {
+    "tag": "p",
+    "text": "CVE-2023-36038 - .NET Denial of Service Vulnerability"
+  },
+  {
+    "tag": "p",
+    "text": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core 8.0 RC2. This advisory also provides guidance on what developers can do to update their applications to address this vulnerability."
+  },
+  {
+    "tag": "p",
+    "text": "A vulnerability exists in ASP.NET IIS where a remote unauthenticated user can issue specially crafted requests to a .NET application which may result in denial of service. This vulnerability only impacts Windows OS."
+  },
+  {
+    "tag": "p",
+    "text": "CVE-2023-36049 - .NET Elevation of Privilege Vulnerability"
+  },
+  {
+    "tag": "p",
+    "text": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET 6.0, .NET 7.0 and .NET 8.0 RC2. This advisory also provides guidance on what developers can do to update their applications to address this vulnerability."
+  },
+  {
+    "tag": "p",
+    "text": "An elevation of privilege vulnerability exists in .NET where untrusted URIs provided to System.Net.WebRequest.Create can be used to inject arbitrary commands to backend FTP servers."
+  },
+  {
+    "tag": "p",
+    "text": "CVE-2023-36558 - .NET Security Feature Bypass Vulnerability"
+  },
+  {
+    "tag": "p",
+    "text": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core 6.0, ASP.NET Core 7.0 and, ASP.NET Core 8.0 RC2. This advisory also provides guidance on what developers can do to update their applications to address this vulnerability."
+  },
+  {
+    "tag": "p",
+    "text": "A security feature bypass vulnerability exists in ASP.NET where an unauthenticated user is able to bypass validation on Blazor server forms which could trigger unintended actions."
+  },
+  {
+    "tag": "h2",
+    "text": "Visual Studio Compatibility"
+  },
+  {
+    "tag": "p",
+    "text": "You need Visual Studio 17.8 or later to use .NET 8.0 on Windows. While not officially supported, we’ve also enabled rudimentary support for .NET 8 in Visual Studio for Mac. Users have to enable a preview feature in Preferences to enable the IDE to discover and use the .NET 8 SDK for creating, loading, building, and debugging projects. The C# extension for Visual Studio Code supports .NET 8.0 and C# 11."
+  },
+  {
+    "tag": "h2",
+    "text": "Feedback"
+  },
+  {
+    "tag": "p",
+    "text": "Your feedback is important and appreciated. We've created an issue at dotnet/core #8904 for your questions and comments."
+  },
+  {
+    "tag": "h2",
+    "text": "Updated packages"
+  },
+  {
+    "tag": "h2",
+    "text": "Downloads"
+  },
+  {
+    "tag": "h3",
+    "text": "Runtime"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-linux-arm.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-linux-arm64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-linux-musl-arm.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-linux-musl-arm64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-linux-musl-x64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-linux-x64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-osx-arm64.pkg"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-osx-arm64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-osx-x64.pkg"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-osx-x64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-win-arm64.exe"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-win-arm64.zip"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-win-x64.exe"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-win-x64.zip"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-win-x86.exe"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-runtime-win-x86.zip"
+  },
+  {
+    "tag": "h3",
+    "text": "SDK 8.0.100"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-linux-arm.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-linux-arm64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-linux-musl-arm.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-linux-musl-arm64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-linux-musl-x64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-linux-x64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-osx-arm64.pkg"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-osx-arm64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-osx-x64.pkg"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-osx-x64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-win-arm64.exe"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-win-arm64.zip"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-win-x64.exe"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-win-x64.zip"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-win-x86.exe"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-sdk-win-x86.zip"
+  },
+  {
+    "tag": "h3",
+    "text": "ASP.NET Runtime"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-linux-arm.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-linux-arm64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-linux-musl-arm.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-linux-musl-arm64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-linux-musl-x64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-linux-x64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-osx-arm64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-osx-x64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-win-arm64.zip"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-win-x64.exe"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-win-x64.zip"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-win-x86.exe"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-win-x86.zip"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-composite-linux-arm.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-composite-linux-arm64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-composite-linux-musl-arm.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-composite-linux-musl-arm64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-composite-linux-musl-x64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "aspnetcore-runtime-composite-linux-x64.tar.gz"
+  },
+  {
+    "tag": "li",
+    "text": "dotnet-hosting-win.exe"
+  },
+  {
+    "tag": "h3",
+    "text": "Windows Desktop Runtime"
+  },
+  {
+    "tag": "li",
+    "text": "windowsdesktop-runtime-win-arm64.exe"
+  },
+  {
+    "tag": "li",
+    "text": "windowsdesktop-runtime-win-arm64.zip"
+  },
+  {
+    "tag": "li",
+    "text": "windowsdesktop-runtime-win-x64.exe"
+  },
+  {
+    "tag": "li",
+    "text": "windowsdesktop-runtime-win-x64.zip"
+  },
+  {
+    "tag": "li",
+    "text": "windowsdesktop-runtime-win-x86.exe"
+  },
+  {
+    "tag": "li",
+    "text": "windowsdesktop-runtime-win-x86.zip"
+  }
+]
